@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <button onclick="goBack()" class="btn btn-secondary">Back</button>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Channel title</th>
+          <th>Total subscribers</th>
+          <th>Total videos</th>
+          <th>Average numbers of views per video</th>
+          <th>Channel description</th>
+          <th>Email</th>
+          <th>Social links</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @channels_data.each do |channel| %>
+        <tr>
+          <td></td>
+          <td><%= channel[:title] %></td>
+          <td><%= channel[:subscriber_count] %></td>
+          <td><%= channel[:video_count] %></td>
+          <td><%= channel[:views_per_video] %></td>
+          <td><%= channel[:description] %></td>
+          <td><%= channel[:email] %></td>
+          <td><%= channel[:social_links]&.join(', ') %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </body>
+  <script>
+  // Get all the rows in the table body
+  const tableRows = document.querySelectorAll('tbody tr');
+  
+  // Loop through each row and add the row number to the first cell
+  tableRows.forEach((row, index) => {
+    const rowNumberCell = row.querySelector('td:first-child');
+    rowNumberCell.textContent = index + 1;
+  });
+</script>
+</html>

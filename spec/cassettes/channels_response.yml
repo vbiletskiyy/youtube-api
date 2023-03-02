@@ -1,0 +1,167 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://youtube.googleapis.com/youtube/v3/channels?id=UCsXVk37bltHxD1rDPwtNM8Q,UCJowOS1R0FnhipXVqEnYU1A&key=AIzaSyBsOHb5ihFhb9pbLPvHV_n6AsEs4LDXq7c&part=statistics,%20snippet,%20brandingSettings
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - unknown/0.0.0 google-apis-youtube_v3/0.27.0 Linux/5.15.0-60-generic (gzip)
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Thu, 02 Mar 2023 09:50:33 GMT
+      X-Goog-Api-Client:
+      - gl-ruby/3.1.2 gdcl/1.27.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Content-Encoding:
+      - gzip
+      Date:
+      - Thu, 02 Mar 2023 09:50:33 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "kind": "youtube#channelListResponse",
+          "etag": "-MbQ9Mlb1XuVUroaEDO1p-2SVQ4",
+          "pageInfo": {
+            "totalResults": 2,
+            "resultsPerPage": 5
+          },
+          "items": [
+            {
+              "kind": "youtube#channel",
+              "etag": "GtMIFTm-vnjDTjTx_L2dzcJN6eg",
+              "id": "UCsXVk37bltHxD1rDPwtNM8Q",
+              "snippet": {
+                "title": "Kurzgesagt – In a Nutshell",
+                "description": "Animation videos explaining things with optimistic nihilism since 12,013.\n\nWe’re a team of illustrators, animators, number crunchers and one dog who aim to spark curiosity about science and the world we live in. To us nothing is boring if you tell a good story.\n\nFor updates on our videos and other news from the kurzgesagt universe follow us on Twitter, Facebook, Instagram and LinkedIn.\n",
+                "customUrl": "@kurzgesagt",
+                "publishedAt": "2013-07-09T20:17:20Z",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://yt3.ggpht.com/ytc/AL5GRJWjS7at2j0n5yn5dsfYFe5x_V8QeN66ppWjzChpoQ=s88-c-k-c0x00ffffff-no-rj",
+                    "width": 88,
+                    "height": 88
+                  },
+                  "medium": {
+                    "url": "https://yt3.ggpht.com/ytc/AL5GRJWjS7at2j0n5yn5dsfYFe5x_V8QeN66ppWjzChpoQ=s240-c-k-c0x00ffffff-no-rj",
+                    "width": 240,
+                    "height": 240
+                  },
+                  "high": {
+                    "url": "https://yt3.ggpht.com/ytc/AL5GRJWjS7at2j0n5yn5dsfYFe5x_V8QeN66ppWjzChpoQ=s800-c-k-c0x00ffffff-no-rj",
+                    "width": 800,
+                    "height": 800
+                  }
+                },
+                "localized": {
+                  "title": "Kurzgesagt – In a Nutshell",
+                  "description": "Animation videos explaining things with optimistic nihilism since 12,013.\n\nWe’re a team of illustrators, animators, number crunchers and one dog who aim to spark curiosity about science and the world we live in. To us nothing is boring if you tell a good story.\n\nFor updates on our videos and other news from the kurzgesagt universe follow us on Twitter, Facebook, Instagram and LinkedIn.\n"
+                },
+                "country": "DE"
+              },
+              "statistics": {
+                "viewCount": "2237613637",
+                "subscriberCount": "20100000",
+                "hiddenSubscriberCount": false,
+                "videoCount": "173"
+              },
+              "brandingSettings": {
+                "channel": {
+                  "title": "Kurzgesagt – In a Nutshell",
+                  "description": "Animation videos explaining things with optimistic nihilism since 12,013.\n\nWe’re a team of illustrators, animators, number crunchers and one dog who aim to spark curiosity about science and the world we live in. To us nothing is boring if you tell a good story.\n\nFor updates on our videos and other news from the kurzgesagt universe follow us on Twitter, Facebook, Instagram and LinkedIn.\n",
+                  "keywords": "Science universe space \"black hole\" life virus climate history education evolution",
+                  "unsubscribedTrailer": "_27eD49ePQE",
+                  "country": "DE"
+                },
+                "image": {
+                  "bannerExternalUrl": "https://yt3.googleusercontent.com/eG1BG-8Ra-zjCP9OGIRGbaLO4z-83im-gM99vUhiMrsEpsu_5cmXy3tnA2dRsbEs0VC5FxPlew"
+                }
+              }
+            },
+            {
+              "kind": "youtube#channel",
+              "etag": "uWv2aNTpSoCafeC1DnRi7Tx5lTs",
+              "id": "UCJowOS1R0FnhipXVqEnYU1A",
+              "snippet": {
+                "title": "SitePoint",
+                "description": "SitePoint is a hub for web developers to share their passion for building incredible Internet things. Founded in 1999, SitePoint is for web professionals, by web professionals: developers, designers, programmers, product creators and entrepreneurs alike.\n\nHaving a passion for building incredible internet things, we all believe in educating and sharing our collective knowledge for all things web. Everyone is invited to watch, learn and participate — or better yet visit us at: http://www.sitepoint.com.",
+                "customUrl": "@sitepoint5757",
+                "publishedAt": "2007-01-18T22:50:46Z",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://yt3.ggpht.com/ytc/AL5GRJUawov2TTZTkJa9LSWwCID-UZBjarTszcH7lgQR=s88-c-k-c0x00ffffff-no-rj",
+                    "width": 88,
+                    "height": 88
+                  },
+                  "medium": {
+                    "url": "https://yt3.ggpht.com/ytc/AL5GRJUawov2TTZTkJa9LSWwCID-UZBjarTszcH7lgQR=s240-c-k-c0x00ffffff-no-rj",
+                    "width": 240,
+                    "height": 240
+                  },
+                  "high": {
+                    "url": "https://yt3.ggpht.com/ytc/AL5GRJUawov2TTZTkJa9LSWwCID-UZBjarTszcH7lgQR=s800-c-k-c0x00ffffff-no-rj",
+                    "width": 800,
+                    "height": 800
+                  }
+                },
+                "localized": {
+                  "title": "SitePoint",
+                  "description": "SitePoint is a hub for web developers to share their passion for building incredible Internet things. Founded in 1999, SitePoint is for web professionals, by web professionals: developers, designers, programmers, product creators and entrepreneurs alike.\n\nHaving a passion for building incredible internet things, we all believe in educating and sharing our collective knowledge for all things web. Everyone is invited to watch, learn and participate — or better yet visit us at: http://www.sitepoint.com."
+                },
+                "country": "AU"
+              },
+              "statistics": {
+                "viewCount": "710104",
+                "subscriberCount": "7980",
+                "hiddenSubscriberCount": false,
+                "videoCount": "105"
+              },
+              "brandingSettings": {
+                "channel": {
+                  "title": "SitePoint",
+                  "description": "SitePoint is a hub for web developers to share their passion for building incredible Internet things. Founded in 1999, SitePoint is for web professionals, by web professionals: developers, designers, programmers, product creators and entrepreneurs alike.\n\nHaving a passion for building incredible internet things, we all believe in educating and sharing our collective knowledge for all things web. Everyone is invited to watch, learn and participate — or better yet visit us at: http://www.sitepoint.com.",
+                  "keywords": "web design development CSS HTML JavaScript React Node Vue Jamstack Gatsby No-Code",
+                  "unsubscribedTrailer": "WZmG5aWpdBc",
+                  "country": "AU"
+                },
+                "image": {
+                  "bannerExternalUrl": "https://yt3.googleusercontent.com/znwv1qkLBdGURbK9vJHG-HC1YVX-9xd_CiS-TGKUHz4ND52Fy7tpFMbfYMGxvcqltONCKiNcgBY"
+                }
+              }
+            }
+          ]
+        }
+  recorded_at: Thu, 02 Mar 2023 09:50:33 GMT
+recorded_with: VCR 6.1.0
