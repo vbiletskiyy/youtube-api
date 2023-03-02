@@ -8,9 +8,13 @@ The setups steps expect following tools installed on the system.
 * Docker
 
 ### Check out the repository
+``` git clone https://github.com/vbiletskiyy/youtube-api.git```
 
 ### Open cd
-```cd ```
+```cd youtube-api```
+
+### Set up a youtube api key
+Create a ```.env``` file, and paste this key ```YOUTUBE_API_KEY=AIzaSyCxWiCUYuwEQOO1G7QmEkH_LuBVsihlqno```
 
 ### Set up app with Docker
 ```docker build -t youtube_api .```
